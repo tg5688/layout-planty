@@ -10,10 +10,6 @@
         height: 30vh;
     }
 
-    @include respond(phone) {
-        height: 20vh;
-    }
-
     &_motto {
         position: absolute;
         bottom: 20%;

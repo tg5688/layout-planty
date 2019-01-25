@@ -7,7 +7,7 @@
     "compile:sass-w": "node-sass sass/main.scss css/style.css -w",
 
     "compile:sass": "node-sass sass/main.scss css/style.css",
-    "prefix:css": "postcss css/style.css --use autoprefixer -b \"last 10 versions\" -o css/style.prefix.css",
+    "prefix:css": "postcss css/style.css --use autoprefixer -b \"last 2 versions\" -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },

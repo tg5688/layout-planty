@@ -1,0 +1,56 @@
+.container {
+    // max-width: 114rem;
+    max-width: 96rem;
+    margin: 2rem auto;
+}
+
+.row {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    @include respond(phone) {
+        justify-content: center;
+    }
+
+    .col-1-of-2 {
+        flex: 0 0 calc(50% - 3rem);
+
+        @include respond(phone) {
+            flex: 0 0 100%;
+
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .col-1-of-3 {
+        flex: 0 0 calc(33% - 3rem);
+
+        @include respond(phone) {
+            flex: 0 0 100%;
+
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .col-1-of-4 {
+        flex: 0 0 calc(25% - 2rem);
+
+        @include respond(tab-port) {
+            flex: 0 0 calc(50% - 2rem);
+        }
+
+        @include respond(phone) {
+            flex: 0 0 100%;
+        }
+    }
+}

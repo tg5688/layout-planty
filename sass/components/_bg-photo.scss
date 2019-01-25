@@ -1,0 +1,21 @@
+.bg-photo {
+    position: relative;
+    background: url('../assets/img-bottom@2x.jpg') no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        height: 100%;
+        width: 100%;
+        border: var(--mainColor) solid 3px;
+        z-index: 1;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+}

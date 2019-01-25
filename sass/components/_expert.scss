@@ -1,0 +1,74 @@
+.expert {
+
+    margin: 6rem 0 0;
+    border: var(--mainColor) solid 3px;
+
+    &_figure {
+        position: relative;
+    }
+
+    &_img {
+        width: 141px;
+        position: absolute;
+        top: -71px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: var(--mainColor) solid 3px;
+        border-radius: 50%;
+        transition: all .5s;
+    }
+
+    &_name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: var(--lightColor);
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &_name {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &_img {
+        filter: blur(3px) brightness(80%);
+    }
+
+    &_about {
+        margin-top: 8rem;
+        padding: 1rem;
+    }
+
+    &_profession {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    &_text {
+        position: relative;
+        font-size: 1.6rem;
+        padding: 4rem 2rem 2rem 4rem;
+        overflow: hidden;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: -2.75rem;
+            left: -1rem;
+            line-height: 1;
+            font-size: 20rem;
+            color: var(--mainColor);
+            font-family: sans-serif;
+            z-index: 1;
+        }
+    }
+}

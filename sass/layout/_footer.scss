@@ -1,0 +1,29 @@
+.footer {
+    margin: 3rem auto 0;
+    padding: 1rem;
+    background-color: var(--mainColor);
+    color: var(--lightColor);
+
+    &_heading {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    &_media {
+        display: flex;
+        justify-content: space-around;
+
+        align-self: center;
+        padding: 1rem 0;
+    }
+
+    &_img {
+        height: 50px;
+        margin-right: 1rem;
+        transition: 1s;
+
+        &:hover {
+            transform: rotateY(-360deg);
+        }
+    }
+}

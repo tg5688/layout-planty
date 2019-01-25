@@ -1,0 +1,48 @@
+.banner {
+    &_images {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_bg {
+        background: url('../assets/img-top@2x.jpg') no-repeat center/cover;
+        height: 100%;
+        width: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 100%;
+            width: 100%;
+            border: var(--mainColor) solid 3px;
+            z-index: 1;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &_phone {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 75%;
+        z-index: 2;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &_about {
+        margin-top: 5rem;
+
+        .logo {
+            width: 80%;
+        }
+    }
+}

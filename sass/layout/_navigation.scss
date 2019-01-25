@@ -1,0 +1,68 @@
+.navbar {
+    width: 80vw;
+    margin: 2rem auto 0;
+
+    .burger {
+        display: none;
+
+
+        @include respond(phone) {
+            display: block;
+            position: absolute;
+            top: 3.5rem;
+            right: 3.5rem;
+            font-size: 3.5rem;
+            line-height: 5rem;
+            cursor: pointer;
+            z-index: 1;
+
+            i {
+                display: none;
+            }
+
+            i.show {
+                display: block;
+            }
+
+        }
+
+    }
+
+    &_list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &_list.show {
+        display: block;
+    }
+
+    &_link:link,
+    &_link:visited {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        margin: 1rem 0;
+        padding: 1rem 2rem;
+        color: var(--darkColor);
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%,
+            var(--mainColor) 50%);
+        background-size: 250%;
+        transition: all .4s;
+    }
+
+    &_link:hover,
+    &_link:active {
+        background-position: 100%;
+        color: var(--lightColor);
+        transform: translateX(1rem);
+    }
+}

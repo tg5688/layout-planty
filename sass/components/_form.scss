@@ -1,0 +1,14 @@
+.contact {
+    &_label {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    &_input,
+    &_textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid var(--mainColor);
+    }
+}

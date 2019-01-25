@@ -1,0 +1,30 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: var(--mainColor);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--lightColor);
+    cursor: pointer;
+    transition: .3s;
+    border: 3px solid var(--mainColor);
+
+    &:hover {
+        background-color: var(--lightColor);
+        color: var(--mainColor);
+    }
+}
+
+.btn--link {
+    text-decoration: none;
+
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
+.btn--send {
+    margin-top: 2rem;
+}

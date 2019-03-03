@@ -6,7 +6,7 @@ Layout laptop size
 ![Layout](layout.png "Layout laptop")
 
 Layout tablet size
-![Layout](layout_tablet.png "Layout tablet")
+![Layout tablet](layout_tablet.png =1600x)
 
 Layout mobile size
-![Layout](layout_mobile.png "Layout mobile")
+![Layout mobile](layout_mobile.png =1200x)

@@ -2,11 +2,13 @@
 
 I used SASS, JavaScript and jQuery to build this layout.
 
-Layout laptop size
+Layout laptop size:
 ![Layout](layout.png "Layout laptop")
 
-Layout tablet size
-![](layout_tablet.png | width=800)
+---
+Layout tablet size:
+![Layout tablet](layout_tablet.png){:height="50%" width="50%"}
 
-Layout mobile size
-![](layout_mobile.png | width=320)
+---
+Layout mobile size:
+![Layout mobile](layout_mobile.png){:height="50%" width="50%"}
